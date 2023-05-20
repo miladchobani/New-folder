@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet"   href="style.css">
+</head>
+<body dir="rtl">
+<div id="header">
+	    <div id="header_menu">
+            <dl id="emo">
+                <dt>گل فروشی انلاین مینودشت</dt>
+                
+				</dl>
+        
+            <p id="entery">
+            ورود و ثبت نام</p>
+            <p id="entery">ویرایش پروفایل</p>
+            <p id="entery">شعبه اصلی</p>
+            <p id="entery">تماس با ما</p>
+        <p></p>
+  
+    </div>
+	            
+</div>
+
+<div id="search"> 
+                    <p id="p1">برای اشنایی بیشتر</p>
+	            <div>
+                    <input type="search" placeholder="جستجو کنید" id="search1">
+                </div>
+	        <div>
+            </div>
+     </div>
+
+<div id="all">
+
+	        <div id="big">  
+				<img id="big_img" src="./golsten_files/022.jpg">
+				<div>
+                    خوش امدید
+        			<p id="big_toz"> بهترین قیمت ها و ارسال درب منرل </p>
+				</div>
+			</div>
+			
+			<div id="but" onclick="sevich()">  گل فروشی 104</div>
+			
+			<div id="grid">
+				
+				<div class="items" onclick="show(1)">
+					<img src="./golsten_files/01.jpg">
+					<div>
+						معرفی گل ادریسی
+						<p>  توضیحات بیشتر  </p>
+					</div>			
+				</div>
+				
+				<div class="items" onclick="show(2)">
+					<img src="./golsten_files/02.jpg">
+					<div>
+						معرفی گل ارکیده
+						<p>  توضیحات بیشتر  </p>
+					</div>			
+				</div>
+				<div class="items" onclick="show(3)">
+					<img src="./golsten_files/03.jpg">
+					<div>
+                        معرفی گل مریم              
+						<p>  توضیحات بیشتر  </p>
+					</div>			
+				</div>
+				
+				<div class="items" onclick="show(4)">
+					<img src="./golsten_files/04.jpg">
+					<div>
+	                    معرفی گل استر
+						<p>  توضیحات بیشتر  </p>
+					</div>			
+				</div>		
+				<div class="items" onclick="show(5)">
+					<img src="./golsten_files/05.jpg">
+					<div>
+						معرفی استرلیتزیا
+						<p>  توضیحات بیشتر  </p>
+					</div>			
+				</div>
+				
+				<div class="items" onclick="show(6)">
+					<img src="./golsten_files/06.jpg">
+					<div>
+						معرفی اسطخودوس
+						<p>  توضیحات بیشتر  </p>
+					</div>			
+				</div>
+
+				<div class="items" onclick="show(7)">
+					<img src="./golsten_files/07.jpg">
+					<div>
+						معرفی گل لیلیوم
+						<p>  توضیحات بیشتر  </p>
+					</div>			
+				</div>		
+				<div class="items" onclick="show(8)">
+					<img src="./golsten_files/08.jpg">
+					<div>
+                        معرفی آفتابگردان
+						<p>  توضیحات بیشتر  </p>
+					</div>			
+				</div>
+				
+				<div class="items" onclick="show(9)">
+					<img src="./golsten_files/09.jpg">
+					<div>
+                        معرفی گل آلاله
+						<p>  توضیحات بیشتر  </p>
+					</div>			
+				</div>	
+			</div>	
+			
+</div>
+
+<script>
+
+function show(i){
+	big_img.src = "img/0" + i + ".jpg";
+	big_toz.innerHTML = "معرفی گل" + i;
+}
+
+f = 0;
+
+function sevich(){
+
+	
+	if(f == 0){
+		grid.style.height = "500px";
+		but.innerHTML = "نمایش کمتر";
+		f = 1;	
+	}
+	
+	else if(f == 1){
+		grid.style.height = "0px";
+		but.innerHTML = "نمایش بیشتر";
+		f = 0;
+	}	
+	
+}
+
+</script>
+
+
+
+
+</body>
+</html>
